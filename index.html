@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1st Birthday Invitation</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             background: linear-gradient(to bottom right, #ffebee, #ffc1e3);
             color: #2b9090;
@@ -28,6 +30,7 @@
             background-color: #f48fb1;
             padding: 15px;
             box-shadow: 0px 4px 10px rgb(251, 249, 249);
+            overflow-x: auto;
         }
         .nav button {
             background-color: #ec407a;
@@ -57,7 +60,7 @@
         }
         .tab-content h2 {
             text-align: center;
-            color:#ec407a;
+            color: #ec407a;
             font-size: 2em;
         }
         .invitation-card {
@@ -124,11 +127,11 @@
             margin-top: 20px;
         }
         .time-location {
-  font-size: 18px;
-  margin: 10px 0;
-  text-align: left;
-  padding-left: 20px;
-}
+            font-size: 18px;
+            margin: 10px 0;
+            text-align: left;
+            padding-left: 20px;
+        }
         footer {
             text-align: center;
             padding: 15px;
@@ -141,19 +144,44 @@
             box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
         }
         .circle-image-container {
-  text-align: center; /* Centers the image */
-  margin: 20px 0;
-}
+            text-align: center;
+            margin: 20px 0;
+        }
 
-.circle-image {
-  width: 180px; /* Adjust the size */
-  height: 180px;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image covers the circle properly */
-  border: 5px solid #d81b60; /* Optional: Adds a border around the image */
-  max-width: 100%; /* Ensures the image is responsive */
-  max-height: 100%; /* Ensures the image is responsive */
-}
+        .circle-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #d81b60;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            .nav button {
+                font-size: 0.9em;
+                padding: 8px 16px;
+                margin: 0 8px;
+            }
+            .tab-content {
+                padding: 20px;
+            }
+            .invitation-card {
+                padding: 20px;
+            }
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+            .videos {
+                grid-template-columns: 1fr;
+            }
+            .circle-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -176,13 +204,13 @@
             <p>I may be tiny, but I’ve got a big smile and a lot of love to share! 💕</p>
             <div class="circle-image-container">
                 <img src="images/images/101.jpg" alt="Invitation Image" class="circle-image" />
-              </div>
+            </div>
             <p>Please come join my party to play, eat cake, and have tons of fun! 🎊</p>
             <div class="time-location">
                 <p><span class="icon">📅<span style="color: #d81b60;">Date:</span> 1st January, 2025</p>
                 <p><span class="icon">⏰<span style="color: #d81b60;">Time:</span> 1 PM Onwards</p>
                 <p><span class="icon">📍<span style="color: #d81b60;">Location:</span> DNR Gardens</p>
-              </div>
+            </div>
             <p>I can’t wait to see you there and make lots of memories with you! 😄</p>
             <b><p class="footer" style="color: #d21f5b;">Hugs and giggles,</p></b>
             <b><p class="footer"><span class="decorative" style="color: #f48fb1;">💕 Aadrithi  💕</span></p></b>
